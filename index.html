@@ -1,23 +1,252 @@
----
-layout: default
----
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>Responsive Resume/CV Template for Developers</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive HTML5 Resume/CV Template for Developers">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head> 
 
-<div class="home">
+<body>
+    <div class="wrapper">
+        <div class="sidebar-wrapper">
+            <div class="profile-container">
+                <img class="profile" src="assets/images/profile.png" alt="" />
+                <h1 class="name">Jeremy Langard</h1>
+                <h3 class="tagline">Student at EM Lyon Business School</h3>
+            </div><!--//profile-container-->
+            
+            <div class="contact-container container-block">
+                <ul class="list-unstyled contact-list">
+                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto: jeremy.langard@edu.emlyon.com">jeremy.langard@edu.emlyon.com</a></li>
+                    <li class="phone"><i class="fa fa-phone"></i><a href="tel:0613843106">06 13 84 31 06</a></li>
+                    <li class="github"><i class="fa fa-github"></i><a href="https://github.com/JLangard" target="_blank">github.com/Jlangard</a></li>
+                     <li class="facebook"><i class="fa fa-facebook"></i><a href="https://facebook.com/jeremy.langard" target="_blank">facebook/jeremy.langard</a></li>
+                </ul>
+            </div><!--//contact-container-->
+            <div class="education-container container-block">
+                <h2 class="container-block-title">Education</h2>
+                <div class="item">
+                    <h4 class="degree">MSc in Management - Grande Ecole</h4>
+                    <h5 class="meta">EM Lyon Business School</h5>
+                    <div class="time">2016 - 2020</div>
+                </div><!--//item-->
+                <div class="item">
+                    <h4 class="degree">Classe Préparatoire CPGE ECS</h4>
+                    <h5 class="meta">Lycée Saint Jean de Douai</h5>
+                    <div class="time">2015 - 2016</div>
+                    <h5 class="meta">Lycée Ampère</h5>
+                    <div class="time">2013 - 2015</div>
+                </div><!--//item-->
+            </div><!--//education-container-->
+            
+            <div class="languages-container container-block">
+                <h2 class="container-block-title">Languages</h2>
+                <ul class="list-unstyled interests-list">
+                    <li>French <span class="lang-desc">(Native)</span></li>
+                    <li>Chinese <span class="lang-desc">(Native)</span></li>
+                    <li>English <span class="lang-desc">(Professional)</span></li>
+                    <li>Spanish <span class="lang-desc">(Professional)</span></li>
+                </ul>
+            </div><!--//interests-->
+            
+            <div class="interests-container container-block">
+                <h2 class="container-block-title">Interests</h2>
+                <ul class="list-unstyled interests-list">
+                    <li>Drawing</li>
+                    <li>Fencing</li>
+                    <li>Music <span class="interests-desc">(mostly Rock'n'Roll)</span></li>
+                </ul>
+            </div><!--//interests-->
+            
+        </div><!--//sidebar-wrapper-->
+        
+        <div class="main-wrapper">
+            
+            <section class="section summary-section">
+                <h2 class="section-title"><i class="fa fa-plane blackiconcolor"></i>An international Profile</h2>
+                <div class="summary">
+                <div class="upper-row">
+                    <div class="time"> 2016 </div>
+                    <div class="company"> <b><u>Scotland</b></u> </div>
+                </div> <!--upper-row-->
+                    <p> About the landscapes, that's a place which needs to be visited. But it's kind of a struggle to understand the folks there. </p>
 
-  <h1 class="page-heading">Posts</h1>
+                <div class="upper-row">
+                    <div class="time"> 2013 </div>
+                    <div class="company"> <b><u>New Zealand</b></u> </div>
+                </div> <!--upper-row-->
+                    <p> The landscapes are wonderfull. But you feel the hole in the Ozone Layer a bit too hard when you forget your sunscreen. </p>                
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                <div class="upper-row">
+                    <div class="time"> spent 7 years </div>
+                    <div class="company"> <b><u>China</b></u> </div>
+                </div> <!--upper-row-->
+                    <p> Perfect to do business ... and to have a lung-cancer faster without smoking anything... </p>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+                <div class="upper-row">
+                    <h3 class="job-title"> Next place I'll visit </h3>
+                    <div class="time"> near future </div>
+                    <div class="company"> <b><u>Proxima B exoplanet</b></u></div>
+                </div> <!--upper-row-->
+                    <p> Everyone is rushing on Mars, but honestly, why don't they go any further? </p>
 
-</div>
+
+                </div><!--//summary-->
+            </section><!--//section-->
+            
+            <section class="section experiences-section">
+                <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
+                
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Latin translator</h3>
+                            <div class="time">Present, but I mean, right now</div>
+                        </div><!--//upper-row-->
+                        <div class="company">My desk, Lyon</div>
+                    </div><!--//meta-->
+                    <div class="details">
+                        <p>I've just figured out that I can speak and translate Latin, because you know:</p>
+                        <p>"lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.</p>  
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." </p>
+                    </div><!--//details-->
+                </div><!--//item-->
+                
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Intern</h3>
+                            <div class="time">2013</div>
+                        </div><!--//upper-row-->
+                        <div class="company">Degremont, Madrid</div>
+                    </div><!--//meta-->
+                    <div class="details">
+                        <p>I did some market research, performed in making coffees and photocopies, learnt to pretend to be serious. Interesting first contact with the environment of a firm.</p>  
+                        
+                    </div><!--//details-->
+                </div><!--//item-->
+                
+
+                
+            </section><!--//section-->
+            
+            <section class="section projects-section">
+                <h2 class="section-title"><i class="fa fa-lightbulb-o"></i>Projects</h2>
+                <div class="intro">
+                    <p> Some of my big projects that are being currently carried out:</p>
+                    <a class="comment">(they are all very good) </a>
+                </div><!--//intro-->
+
+                <div class="item">
+                    <span class="project-title"><a href="https://cdn.meme.am/instances/500x/53719552.jpg" target="_blank">YOuDA Master</a></span> - 
+                    <span class="project-tagline"> Help master Yoda to train new Padawans by teaching them how to speak correctly first. </span>
+                </div><!--//item-->
+
+                <div class="item">
+                    <span class="project-title"><a href=http://i.imgur.com/fCKf3ZQ.jpg" target="_blank">GeekforFuture</a></span> - <span class="project-tagline"> To make Geeks understood and considered to be supercool by the rest of the population, because we need those brainy Geeks for the future. </span>
+                </div><!--//item-->
+
+            </section><!--//section-->
+            
+            <section class="skills-section section">
+                <h2 class="section-title"><i class="fa fa-cogs"></i>Skills &amp; Proficiency</h2>
+                <div class="skillset">
+
+                    <div class="item">
+                        <h3 class="level-title">Sketch &amp; Photoshop</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="60%">
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+
+                    <div class="item">
+                        <h3 class="level-title">Excel</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="90%">
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+
+                    <div class="item">
+                        <h3 class="level-title">HTML5 &amp; CSS</h3>   
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="10%">
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+                    
+                    <div class="item">
+                        <h3 class="level-title">Being a Padawan</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="5%">
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+                    
+                    <div class="item">
+                        <h3 class="level-title">Making Coffee</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="78%">
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+                    
+                    <div class="item">
+                        <h3 class="level-title">Understanding Kant's Philosophy</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="1%">
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+
+                    <div class="item">
+                        <h3 class="level-title">Wasting time on stupid &amp; useless things</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="100%">
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+                    
+                </div>  
+            </section><!--//skills-section-->
+            
+        </div><!--//main-body-->
+    </div>
+ 
+    <footer class="footer">
+        <div class="text-center">
+                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright"> <i class="fa fa-thumbs-o-up"></i> for <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> and his template</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>            
+</body>
+</html> 
+
